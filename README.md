@@ -42,3 +42,10 @@ improvements from [previous demo](https://github.com/tanya-sonker/angular-app)
 - angular has built-in i18n functionality unlike react & vue but only supports xml formats (xliff, xmb). though more performant, needs app to reload for every translation
 - one of the simplest ways to load translation files is from assets via translatehttploader. by default, there is no loader so http-loader is imported and customized
 - img's alt text attribute and svg component's title tag can be translated too
+
+## deployment
+- in angular.json, change outPath to docs:
+`"outputPath": "docs"`
+- in terminal, build your project in prod:
+`ng build --output-path docs --base-href i18n-demo`
+- in github pages settings, connect the main branch to the docs folder 
